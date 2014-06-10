@@ -1,0 +1,23 @@
+{
+  "name": "trie_lab",
+  "version": "0.0.0",
+  "description": "A trie lab",
+  "dependencies": {
+    "jasmine-node": "*"
+  },
+  "scripts": {
+    "test": "jasmine-node spec/trie_spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wdi-sf-march-2014/trie_lab.git"
+  },
+  "keywords": [
+    "trie",
+    "tree"
+  ],
+  "bugs": {
+    "url": "https://github.com/wdi-sf-march-2014/trie_lab/issues"
+  },
+  "homepage": "https://github.com/wdi-sf-march-2014/trie_lab"
+}
