@@ -2,21 +2,23 @@ var Trie = require("./trie.js"),
     fs = require("fs");
 
 Autocompleter = function(){
-  //this.data = new Trie();
-  this.data = new Array();
+  this.data = new Trie();
+  //this.data = new Array();
 };
 
 Autocompleter.prototype.complete = function(prefix){
-  //return this.data.autoComplete(prefix);
-  return this.data.filter(function(str){
+  return this.data.autoComplete(prefix);
+  /*return this.data.filter(function(str){
       return str.substring(0,prefix.length).toLowerCase() === prefix;
    });
+   */
 };
 
 Autocompleter.prototype.add = function(word){
-  //this.data.learn(word);
-  this.data.push(word);
+  this.data.learn(word);
+  /*this.data.push(word);
   console.log("Learning word:", word);
+  */
 };
 
 Autocompleter.prototype.readFile = function(fileName){
